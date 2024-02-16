@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 20rem;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    filter: blur(1px);
+}
+
+.card_image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 5px solid #9176ff;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2rem;
+}
+
+.card_text {
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.card_btn {
+    background-color: #9176ff;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+/* Pagination Styles */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #999;
+    opacity: 0.5;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #9176ff;
+}

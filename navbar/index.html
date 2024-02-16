@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+
+        <input type="checkbox" id="menu-bar">
+        <nav class="navbar" role="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li aria-haspopup="true" aria-expanded="false">
+                    <a href="#">Pages +</a>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hi">
+        <div class="container" onmouseleave="hideDropdown('dropdown1')">
+            <input type="text" id="locationInput" placeholder="Location" onmouseenter="showDropdown('dropdown1')">
+            <div class="dropdown-content" id="dropdown1">
+                <a href="#" onclick="selectOption('option1')">Option 1</a>
+                <a href="#" onclick="selectOption('option2')">Option 2</a>
+                <a href="#" onclick="selectOption('option3')">Option 3</a>
+                <a href="#" onclick="selectOption('option4')">Option 4</a>
+                <a href="#" onclick="selectOption('option5')">Option 5</a>
+            </div>
+        </div>
+
+        <div class="container" onmouseleave="hideDropdown('dropdown2')">
+            <input type="text" id="searchInput" placeholder="Search..." onmouseenter="showDropdown('dropdown2')">
+            <div class="dropdown-content" id="dropdown2">
+                <a href="#" onclick="selectSearch('result1')">Search Result 1</a>
+                <a href="#" onclick="selectSearch('result2')">Search Result 2</a>
+                <a href="#" onclick="selectSearch('result3')">Search Result 3</a>
+                <a href="#" onclick="selectSearch('result4')">Search Result 4</a>
+                <a href="#" onclick="selectSearch('result5')">Search Result 5</a>
+            </div>
+        </div>
+        <div class="imgContainer">
+
+            <div class="slide_div active " id="slide_1">
+                <img src="/images/levi.png" alt="" class="img" id="img1">
+            </div>
+            <div class="slide_div" id="slide_2">
+                <img src="/images/ad.jpg" alt="" class="img" id="img2">
+            </div>
+            <div class="slide_div" id="slide_3">
+                <img src="/images/levi.png" alt="" class="img" id="img3">
+            </div>
+            <div class="slide_div" id="slide_4">
+                <img src="/images/ad.jpg" alt="" class="img" id="img4">
+            </div>
+            <div class="slide_div" id="slide_5">
+                <img src="/images/levi.png" alt="" class="img" id="img5">
+            </div>
+            <div class="slide_div" id="slide_6">
+                <img src="/images/ad.jpg" alt="" class="img" id="img6">
+            </div>
+            <div class="slide_div" id="slide_7">
+                <img src="/images/levi.png" alt="" class="img" id="img7">
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var slides = document.querySelectorAll('.slide_div');
+        var currentSlide = 0;
+
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        // JavaScript to handle dropdown functionality
+        slides[currentSlide].classList.add('active');
+        setInterval(showNextSlide, 2000);
+
+        function showDropdown(dropdownId) {
+            document.getElementById(dropdownId).style.display = "block";
+        }
+
+        function hideDropdown(dropdownId) {
+            document.getElementById(dropdownId).style.display = "none";
+        }
+
+        function selectOption(optionValue) {
+            document.getElementById("locationInput").value = optionValue;
+            document.getElementById("dropdown1").style.display = "none";
+        }
+
+        function selectSearch(searchValue) {
+            document.getElementById("searchInput").value = searchValue;
+            document.getElementById("dropdown2").style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>
