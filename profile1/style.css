@@ -6,10 +6,10 @@ body {
 
 .box1 {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
     background-color: rgb(229, 161, 229);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    width: 80rem;
+    width: 52rem;
     height: auto;
     border-radius: 15px;
     margin: 5rem 0 0 5rem;
@@ -42,9 +42,6 @@ label{
     
 }
 
-#ch:checked ~ .card_image{
-    position: fixed;
-}
 
 .card {
     flex-direction: column;
@@ -61,13 +58,13 @@ label{
     cursor: pointer; 
 }
 .card_image {
-
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     border: 5px solid #9176ff;
     padding: 3px;
     margin: 1rem;
+
 }
 
 .doctor_details {
@@ -79,7 +76,7 @@ label{
 }
 
 .card_image img {
-    /* position: fixed; */
+    position: static;
     width: 100%;
     height: 100%;
     border-radius: 50%;
