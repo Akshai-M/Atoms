@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-.box1 {
+.doctor_info {
     display: flex;
     align-items: center; 
     background-color: rgb(229, 161, 229);
@@ -15,7 +15,7 @@ body {
     margin: 5rem 0 0 5rem;
 }
 
-#ch:checked ~ .box1{
+#ch:checked ~ .doctor_info{
     width: auto;
     height: auto;
 }
@@ -70,9 +70,11 @@ label{
 .doctor_details {
     display: flex;
     padding-top: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex-direction: column;
     text-align: left;
     margin-left: 1rem;
+    border-bottom: 1px solid #ccc;
 }
 
 .card_image img {
@@ -83,3 +85,61 @@ label{
     object-fit: cover;
 }
 
+.container{
+    display: flex;
+}
+
+.clinic_info{
+    font-weight: 700;
+    padding: 0;
+    position: absolute;
+    border:2px solid black;
+    width: 20%;
+    height: 75%;
+    margin: 12vh 0 2rem 60rem;
+}
+
+.clinic_info h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-size: 1.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fee{
+    display: flex;
+    height: 69px;
+    align-items: center;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 0 0 0 15px;
+    background: hsla(197, 100%, 50%, 0.183);
+   
+}
+
+.fee .title{
+    
+    padding: 0 69px 0 30px;
+} 
+
+.area{
+    display: block;
+    padding: 4px 0 0 19px;
+}
+
+.hospital_info{
+    padding-top: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+
+.line{
+    margin-left: 25px;
+    width: 250px;
+    height: 1px;
+    background: hsla(197, 100%, 50%, 0.279);
+    /* background-color: rgb(108, 141, 151); */
+  
+}
