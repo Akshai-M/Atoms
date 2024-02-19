@@ -1,0 +1,55 @@
+.box {
+    border: 1px solid red; /* Red border */
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+}
+
+.consult-with-doctor {
+    margin-right: 20px;
+    flex: 1;
+}
+
+.icon-transition {
+    border-left: 1px solid #ccc; /* Add a line to separate */
+    padding-left: 20px;
+    flex: 1;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin-bottom: 10px; /* Added spacing between icons */
+}
+
+.input-block {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.name-input-block,
+.mobile-input-block {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.continue-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
