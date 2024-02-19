@@ -1,0 +1,156 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background:#d1cdcdc3;
+
+}
+
+.container-wrapper {
+  background: white;
+  display: flex;
+  border-radius: 22px;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 40px auto ;
+}
+
+.container {
+  display: block;
+  width: 55rem;
+  padding: 20px;
+  margin: 5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container1 {
+  width: 57rem;
+  /* padding: 2rem 2rem 0 2rem; */
+  margin: 5rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 2rem;
+  object-fit: cover;
+}
+
+.appointment-name {
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+.details1{
+  margin-bottom: 20px;
+}
+
+.details-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.details1-block {
+  display: block;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  
+}
+
+h3{
+  font-weight: 540;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.details-block label {
+  font-weight: bold;
+  /* margin-top: 10px; */
+}
+.details1-block label {
+  /* font-weight: bold; */
+  display: flex;
+top: 10px;
+position: relative;
+}
+
+strong{
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image{
+width: 20px;
+
+}
+
+.butto {
+  background-color: none;
+  color: #0a87ed;
+  border: none;
+  /* text-decoration: underline; */
+  font-weight: 540;
+  cursor: pointer;
+}
+.button1{
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2ee79da7;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family:monospace;
+  
+}
+
+.name{
+  font-size:larger;
+  font-weight: 500;
+  line-height: 2;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info{
+  font-size:medium;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 1rem 0 10px 0;
+}
+
+.divider {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-content {
+  flex-direction: column;
+}
