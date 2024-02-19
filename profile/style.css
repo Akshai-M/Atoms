@@ -19,6 +19,11 @@ body {
     width: 100%;
 }
 
+/* .swiper-container {
+    padding-left: 20px; 
+    padding-right: 20px; 
+} */
+
 .swiper-wrapper {
     width: 100%;
     height: 35em;
