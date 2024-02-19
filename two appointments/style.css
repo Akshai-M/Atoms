@@ -1,0 +1,297 @@
+body {
+    background-color: #eae7e7c3;
+    margin: 0;
+    padding: 0;
+}
+
+.clinic_info {
+    font-weight: 700;
+    padding: 0;
+    position: absolute;
+    margin: 12vh 0 2rem 60rem;
+}
+
+.stylee {
+    background: white;
+    width: auto;
+    height: auto;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.clinic_info h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 10px;
+    font-weight: 100;
+    /* font-size: 1.9rem; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fee {
+    display: flex;
+    height: 69px;
+    align-items: center;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 0 0 0 15px;
+    background: hsla(197, 100%, 50%, 0.183);
+}
+
+.fee .title {
+    padding: 0 69px 0 30px;
+}
+
+.area {
+    display: block;
+    padding: 4px 0 0 19px;
+}
+
+.hospital_info {
+    padding-top: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.line1 {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background: black;
+}
+
+strong {
+    color: rgb(255, 94, 0);
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+}
+
+.line {
+    width: 21.5vw;
+    height: 1px;
+    background: hsla(197, 75%, 25%, 0.571);
+    margin: 15px 15px 15px 25px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 24px;
+}
+
+.day-container {
+    border-right: 2px solid black;
+    padding: 0 14px 0 0;
+    margin-right: 5px;
+}
+
+.dates {
+    text-align: center;
+}
+
+.day:last-child .day-container {
+    border-right: none;
+    margin-right: 0;
+}
+
+.slot-time {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 15px 0 0 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1rem;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.slot {
+    width: auto;
+    height: auto;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 5px 2px 5px 2px;
+    color: rgb(29, 167, 253);
+    border-radius: 5px;
+    border: 2px solid rgb(29, 167, 253);
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .button-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button-box input[type="radio"] {
+    display: none;
+  }
+  
+  .button-box label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9176ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 5px; /* Adjust spacing here */
+  }
+  
+  .button-box label:last-child {
+    margin-right: 0; /* Remove margin from last label */
+  }
+  
+  .separator {
+    height: 30px;
+    border-left: 1px solid #000;
+    margin: 0 10px;
+  }
+  body {
+    background-color: #eae7e7c3;
+    margin: 0;
+    padding: 0;
+  }
+
+  .clinic_info {
+    font-weight: 700;
+    padding: 0;
+    position: absolute;
+    margin: 12vh 0 2rem 60rem;
+  }
+
+  .clinic_info h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 10px;
+    font-weight: 100;
+    font-size: 1.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .button-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .button-box input[type="radio"] {
+    display: none;
+  }
+
+  .button-box label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+  }
+
+  .button-box label:last-child {
+    margin-right: 0;
+   
+  }
+
+  .separator {
+    height: 30px;
+    border-left: 1px solid #000;
+    margin: 0 10px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    color: black;
+    height: 100%;
+  }
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid grey;
+    border-radius: 50%;
+  }
+
+  .divider {
+    display: inline-block;
+    border-left: 1px solid #000;
+    height: 100%;
+    margin: 0 10px;
+  }
+
+  input[type="radio"]:checked+label .circle::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box {
+    /* border: 1px solid red; */
+    padding: 1rem;
+    display: inline-block;
+    background: white;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+  }
+  .box1{
+    /* border: 1px solid red; */
+    padding: 1rem;
+    display: inline-block;
+    background: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .container-box{
+    margin-bottom: 10px;
+  }  
