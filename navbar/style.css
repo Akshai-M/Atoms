@@ -32,17 +32,20 @@ header .navbar ul li{
     float: left;
 }
 
-/* brofore */
+/* brofore */ 
 header .navbar ul li a{
     font-size: 20px;
     padding: 20px;
     color: #333;
     display: block;
+    transition: color 0.3s;
 }
 header .navbar ul li a:hover{
-   background:#c72cea;
-   color: #ffff;
+   /* background:#c72cea; */
+   color: #bb0f0f;
     border-radius: 9px;
+    transition: color 0.3s;
+
     /* font-weight: bold; */
 }
 

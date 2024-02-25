@@ -1,0 +1,100 @@
+body {
+    background-color: #eae7e7c3;
+    margin: 0;
+    padding: 0;
+}
+
+.doctor_info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 52rem;
+    height: auto;
+    border-radius: 15px;
+    margin: 5rem 0 0 5rem;
+}
+
+#ch:checked~.doctor_info {
+    width: auto;
+    height: auto;
+}
+
+#ch {
+    display: none;
+}
+
+#ch:checked~.content {
+    display: block;
+}
+
+#ch:checked~label {
+    display: none;
+}
+
+.content {
+    display: none;
+}
+
+label {
+    color: blue;
+}
+
+.card {
+    flex-direction: column;
+    text-align: left;
+}
+
+.card span {
+    margin-bottom: 1rem;
+}
+
+.card label {
+    color: blue;
+    cursor: pointer;
+}
+
+.card_image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 5px solid #9176ff;
+    padding: 3px;
+    margin: 1rem;
+}
+
+.doctor_details {
+    display: flex;
+    padding-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.card_image img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+}
+
+.verified {
+    display: flex;
+    align-items: center; 
+    color: green;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+.verified img {
+    margin-right: 5px; 
+    height: 20px; 
+}
